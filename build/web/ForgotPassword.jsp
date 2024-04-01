@@ -27,8 +27,8 @@
     String resetToken = "randomToken123";
 
     // Your Gmail credentials
-    String username = "authenticationbiometric@gmail.com";
-    String password = "Biometric@123";
+    String username = "";
+    String password = "";
      Random random = new Random();
         int otp = 100000 + random.nextInt(900000);
         
@@ -45,7 +45,7 @@ props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
     // Create a session with the Gmail SMTP server
     Session emailsession = Session.getInstance(props, new javax.mail.Authenticator() {
         protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-            return new javax.mail.PasswordAuthentication("authenticationbiometric@gmail.com", "iboggbzudbjvtyak");
+            return new javax.mail.PasswordAuthentication("", "");
         }
     });
 
